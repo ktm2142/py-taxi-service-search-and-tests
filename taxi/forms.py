@@ -57,5 +57,7 @@ class SearchForm(forms.Form):
         max_length=255,
         required=False,
         label="",
-        widget=forms.TextInput(attrs={"placeholder": "What do you wanna find?"})
+        widget=forms.TextInput(
+            attrs={"placeholder": "What do you wanna find?"}
+        )
     )

@@ -42,7 +42,10 @@ class SearchCarTest(TestCase):
             license_number="TES12345"
         )
         self.client.force_login(self.user)
-        self.manufacturer = Manufacturer.objects.create(name="Bugatti", country="France")
+        self.manufacturer = Manufacturer.objects.create(
+            name="Bugatti",
+            country="France"
+        )
 
         car_1 = Car.objects.create(
             model="Veyron",
